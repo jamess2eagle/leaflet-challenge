@@ -72,7 +72,7 @@ function insertMap(geojsonLayer, tectonicLayer) {
   var myMap = L.map("mapid", {
       center: [37.09, -75.71],
       zoom: 3,
-      layers: [darkmap,geojsonLayer, tectonicLayer]
+      layers: [darkmap,tectonicLayer,geojsonLayer]
   });
   //add clickable layers
   L.control.layers(baseMaps, overlayMaps, {
